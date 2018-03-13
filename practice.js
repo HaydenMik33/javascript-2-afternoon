@@ -13,9 +13,12 @@
   Give it a key of name with the value being your name, and another key of age with the value being your age. 
   Then alert your name using dot notation.
 */
-
+var me = {
+  name: "Hayden",
+  age: 21
+}
+alert(me.name);
 //Code here
-
 
 
 ////////// PROBLEM 2 //////////
@@ -26,7 +29,14 @@
 */
 
 //Code here
-
+var favoriteThings ={
+  band: "f(x)",
+  food: "sushi",
+  person : "mom",
+  book : "umm..",
+  movie : "Mad Max",
+  holiday : "new year"
+}
 
 
 /*
@@ -35,14 +45,16 @@
 
 //Code here
 
-
+favoriteThings.car = "Porsche GT3 RS";
+favoriteThings.brand = "Thusday island";
 
 /*
   Now change the value of the food key in your favoriteThings object to be 'Chicken Nuggets' and change the value of the book key in your favoriteThings object to be 'Harry Potter'.
 */
 
 //Code here
-
+favoriteThings.food = "Chicken Nuggets";
+favoriteThings.book ="Harry Potter";
 
 
 ////////// PROBLEM 3 //////////
@@ -56,8 +68,12 @@
 */
 
 //Code here
+var  backPack ={
 
-
+};
+var item  = "firstPocket";
+backPack[item] = "chapstick";
+backPack["color"] = "red"; 
 
 /*
   After you do the above, alert your entire backPack object.
@@ -66,7 +82,7 @@
 //Code here
 
 
-
+//alert(backPack);
 /*
 You probably noticed that it just alerted [object Object].
 Alerting to see the data in your Object doesn't work so well.
@@ -74,9 +90,7 @@ Instead, console.log your whole backPack object and then check out the console.
 */
 
 //Code here
-
-
-
+console.log(backPack);
 ////////// PROBLEM 4 //////////
 
 // Do not edit the code below.
@@ -97,7 +111,8 @@ var user2 = {
 */
 
 //Code Here
-
+user2.name = 'Tyler S. McGinnis';
+user2.email = 'tyler.mcginnis@devmounta.in';
 
 
 ////////// EXTRA PRACTICE PROBLEMS BELOW //////////
@@ -109,6 +124,9 @@ var user2 = {
 */
 
 //Code Here
+var methodCollection = {
+
+}
 
 
 
@@ -119,14 +137,16 @@ var user2 = {
 
 //Code Here
 
-
+methodCollection.alertHello = ()=>alert("hello");
+methodCollection.logHello = ()=>console.log("hello");
 
 /*
   Now call your alertHello and logHello methods.
 */
 
 //Code Here
-
+methodCollection.alertHello();
+methodCollection.logHello();
 
 
 ////////// PROBLEM 6 //////////
@@ -138,8 +158,16 @@ var user2 = {
 
 //Code Here
 
+function makePerson(name,birthday,ssn){
+  var info = {
+    name = name,
+    birthday = birthday,
+    ssn = ssn
+  }
+  return info;
+}
 
-
+var Hayden = new makePerson("Hayden",0107,1234);
 ////////// PROBLEM 7 //////////
 
 /*
@@ -149,4 +177,11 @@ var user2 = {
 
 //Code Here
 
-
+var makeCard = function(cardNumber,expirationDate,securityCode){
+    var card ={
+      cardNumber = cardNumber,
+      expirationDate = expirationDate,
+      securityCode = securityCode
+    }
+    return card;
+}
