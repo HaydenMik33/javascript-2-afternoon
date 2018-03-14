@@ -160,9 +160,9 @@ methodCollection.logHello();
 
 function makePerson(name,birthday,ssn){
   var info = {
-    name = name,
-    birthday = birthday,
-    ssn = ssn
+    name : name,
+    birthday : birthday,
+    ssn : ssn
   }
   return info;
 }
@@ -179,9 +179,9 @@ var Hayden = new makePerson("Hayden",0107,1234);
 
 var makeCard = function(cardNumber,expirationDate,securityCode){
     var card ={
-      cardNumber = cardNumber,
-      expirationDate = expirationDate,
-      securityCode = securityCode
+      cardNumber : cardNumber,
+      expirationDate : expirationDate,
+      securityCode : securityCode
     }
     return card;
 }
